@@ -1,0 +1,15 @@
+﻿@page "/"
+@inherits HomeBase
+
+<PageTitle>Draw Lots</PageTitle>
+
+<div style="height: 100%; text-align: center;">
+    <div style="position: relative; text-align: center;">
+        <img src="images\mouth.png" width="400" />
+        <p style="position: absolute; top: 45%; left: 50%; transform: translate(-50%, -50%); font-size: 3rem; color: @(FontColor)">
+            @NowWinner
+        </p>
+    </div>
+
+    <button @onclick="Draw">抽獎</button>
+</div>
